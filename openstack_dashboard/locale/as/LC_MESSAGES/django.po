@@ -1,9 +1,9 @@
 # OpenStack Infra <zanata@openstack.org>, 2015. #zanata
 msgid ""
 msgstr ""
-"Project-Id-Version: PROJECT VERSION\n"
-"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-04-07 12:25+0000\n"
+"Project-Id-Version: horizon 9.0.1.dev276\n"
+"Report-Msgid-Bugs-To: https://bugs.launchpad.net/openstack-i18n/\n"
+"POT-Creation-Date: 2016-05-15 05:33+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1763,10 +1763,6 @@ msgstr "EC2 পৰিচয়পত্ৰবোৰ ডাউনলোড কৰক
 msgid "Download Key Pair"
 msgstr "মুখ্য যোৰা ডাউনলোড কৰক"
 
-#, python-format
-msgid "Download key pair &quot;%(keypair_name)s&quot;"
-msgstr "&quot;%(keypair_name)s&quot; মুখ্য যোৰা ডাউনলোড কৰক"
-
 msgid "EC2 Access Key"
 msgstr "EC2 প্ৰৱেশ কী"
 
@@ -2427,10 +2423,6 @@ msgstr "ফ্লটিং IP বোৰ"
 msgid "Folder created successfully."
 msgstr "ফল্ডাৰ সফলতাৰে তৈয়াৰ কৰা হল."
 
-#, python-format
-msgid "For GRE networks, valid tunnel IDs are %(min)s through %(max)s."
-msgstr "GRE নেটৱৰ্কবোৰৰ বাবে, বৈধ টানেল IDবোৰ হল %(max)s ৰ জৰিয়তে %(min)s."
-
 msgid ""
 "For TCP and UDP rules you may choose to open either a single port or a range "
 "of ports. Selecting the \"Port Range\" option will provide you with space to "
@@ -2441,30 +2433,6 @@ msgstr ""
 "পছন্দ কৰিব পাৰে. \"Port Range\" বিকল্পটো নিৰ্বাচন কৰাটোৱে আপোনাক পৰিসৰটোৰ বাবে "
 "আৰম্ভণি আৰু শেষৰ পোৰ্ট দুয়োটালৈ খালী ঠাই আগবঢ়াব. ICMP নিয়মবোৰৰ বাবে আপুনি এটা "
 "ICMP প্ৰকাৰ আৰু দিয়া ঠাইবোৰ কোড নিৰ্দিষ্ট কৰাৰ পৰিৱৰ্তে."
-
-#, python-format
-msgid ""
-"For VLAN networks, the VLAN VID on the physical network that realizes the "
-"virtual network. Valid VLAN VIDs are %(vlan_min)s through %(vlan_max)s. For "
-"GRE or VXLAN networks, the tunnel ID. Valid tunnel IDs for GRE networks are "
-"%(gre_min)s through %(gre_max)s. For VXLAN networks, %(vxlan_min)s through "
-"%(vxlan_max)s."
-msgstr ""
-"VLAN নেটৱৰ্কবোৰৰ বাবে, ফিজিকেল নেটৱৰ্কটোত থকা VLAN VID টোৱে ভিৰচুৱেল নেটৱৰ্কটো "
-"উপলব্ধি কৰে. বৈধ VLAN VIDবোৰ হল %(vlan_max)s ৰ জৰিয়তে  %(vlan_min)s. GRE বা "
-"VXLAN নেটৱৰ্কৰ বাবে, টানেল ID টো. GRE নেটৱৰ্কবোৰৰ বাবে বৈধ টানেল IDবোৰ হল "
-"%(gre_max)s ৰ জৰিয়তে %(gre_min)s. VXLAN নেটৱৰ্কবোৰৰ বাবে, through "
-"%(vxlan_max)s ৰ জৰিয়তে %(vxlan_min)s."
-
-#, python-format
-msgid "For VLAN networks, valid VLAN IDs are %(min)s through %(max)s."
-msgstr "VLAN নেটৱৰ্কবোৰৰ বাবে, বৈধ VLAN IDবোৰ হল %(max)s ৰ জৰিয়তে %(min)s."
-
-#, python-format
-msgid "For VXLAN networks, valid tunnel IDs are %(min)s through %(max)s."
-msgstr ""
-"VXLAN নেটৱৰ্কবোৰৰ বাবে , বৈধ টানেল ID বোৰ হল  through %(max)s ৰ জৰিয়তে "
-"%(min)s."
 
 msgid "Forbidden"
 msgstr "নিষিদ্ধ কৰা হল"
@@ -2932,9 +2900,6 @@ msgstr "উদাহৰণ কনছোল"
 
 msgid "Instance Console Log"
 msgstr "উদাহৰণ কনছোল ল'গ"
-
-msgid "Instance Count"
-msgstr "উদাহৰণ গণনা"
 
 msgid "Instance ID"
 msgstr "উদাহৰণ ID"
@@ -3712,9 +3677,6 @@ msgstr "এটা VM ইন্টাৰফেছৰ বাবে  নেটৱ�
 msgid "Number of incoming packets for a VM interface"
 msgstr "VM ইন্টাৰফেছ এটাৰ বাবে অহা পেকেটবোৰৰ সংখ্যা"
 
-msgid "Number of instances to launch."
-msgstr "আৰম্ভ কৰিবলৈ উদাহৰণবোৰৰ সংখ্যা."
-
 msgid "Number of objects"
 msgstr "বস্তুবোৰৰ সংখ্যা"
 
@@ -4216,9 +4178,6 @@ msgstr ""
 "সকলোবোৰ নিৰ্বাচিত সদস্যবোৰলৈ একে ওজনটো প্ৰয়োগ কৰা হব আৰু পিছত পৰিৱৰ্তন কৰা হব "
 "পাৰে. ওজনটো 1 ৰ পৰা 256 পৰিসৰৰ ভিতৰত থকাটো অপৰিহাৰ্য."
 
-msgid "Reload"
-msgstr "পুনৰ লোড কৰক"
-
 msgid "Remote"
 msgstr "দূৰৰ"
 
@@ -4579,9 +4538,6 @@ msgstr "মুখ্য যোৰা এটা নিৰ্বাচন কৰ�
 #, python-format
 msgid "Select a monitor template for %s"
 msgstr "%s ৰ বাবে নিৰীক্ষণকৰ্তা নমুনা এটা নিৰ্বাচন কৰক"
-
-msgid "Select a name for your network."
-msgstr "আপোনাৰ নেটৱৰ্কৰ নাম এটা নিৰ্বাচন কৰক."
 
 msgid "Select a new agent"
 msgstr "এটা নতুন এজেন্ট নিৰ্বাচন কৰক"
@@ -5256,14 +5212,6 @@ msgstr "উদাহৰণটোৱে \"%s\" হষ্টলৈ জীৱন্
 
 msgid "The instance password encrypted with your public key."
 msgstr "আপোনাৰ ৰাজহুৱা কীৰ সৈতে উদাহৰণ পাছৱৰ্ডটো এনক্ৰিপ্ট কৰা হল."
-
-#, python-format
-msgid ""
-"The key pair &quot;%(keypair_name)s&quot; should download automatically. If "
-"not use the link below."
-msgstr ""
-"&quot;%(keypair_name)s&quot; মুখ্য যোৰাটো স্বয়ংক্ৰিয়ভাৱে ডাউনলোড কৰা উচিত. যদি "
-"তলৰ সংযোগটো ব্যৱহাৰ নকৰে."
 
 msgid ""
 "The minimum disk size required to boot the image. If unspecified, this value "
@@ -6911,9 +6859,6 @@ msgstr ""
 "আপুনি বিচৰা কৰা নিয়ম নমুনাটো নিৰ্দিষ্ট কৰিব পাৰে বা নিয়মবোৰৰ ব্যৱস্থা কৰিব পাৰে, "
 "বিকল্পবোৰ হল ব্যৱস্থা TCP নিয়ম, ব্যৱস্থা UDP নিয়ম, বা ব্যৱস্থা ICMP নিয়ম."
 
-msgid "You cannot disable the user you are currently logged in as."
-msgstr "আপুনি বৰ্তমানে ... ৰ দৰে লগ ইন কৰা ব্যৱহাৰকৰ্তাবোৰ অক্ষম কৰিব নোৱাৰে."
-
 msgid ""
 "You cannot revoke your administrative privileges from the domain you are "
 "currently logged into. Please switch to another domain with administrative "
@@ -7061,9 +7006,6 @@ msgstr "উভয়ে"
 
 msgid "clear"
 msgstr "সম্পন্ন কৰক"
-
-msgid "console is currently unavailable. Please try again later."
-msgstr "কনছোল বৰ্তমানে উপলব্ধ নাই. অনুগ্ৰহ কৰি পিছত পুনৰ চেষ্টা কৰক."
 
 msgid "disabled"
 msgstr "অক্ষম কৰা হল"

@@ -5,13 +5,14 @@
 # Andreas Jaeger <jaegerandi@gmail.com>, 2016. #zanata
 # Ian Y. Choi <ianyrchoi@gmail.com>, 2016. #zanata
 # Jaesang Lee <hyangii@gmail.com>, 2016. #zanata
+# OpenStack Infra <zanata@openstack.org>, 2016. #zanata
 # Sungjin Kang <gang.sungjin@gmail.com>, 2016. #zanata
 # Sunhong Kim <intensify7@naver.com>, 2016. #zanata
 msgid ""
 msgstr ""
-"Project-Id-Version: PROJECT VERSION\n"
-"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-04-07 12:25+0000\n"
+"Project-Id-Version: horizon 9.0.1.dev276\n"
+"Report-Msgid-Bugs-To: https://bugs.launchpad.net/openstack-i18n/\n"
+"POT-Creation-Date: 2016-05-15 05:33+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -458,9 +459,6 @@ msgstr "%sGiB"
 #, python-format
 msgid "%sMB"
 msgstr "%sMB"
-
-msgid "&laquo;&nbsp;Back"
-msgstr "&laquo;&nbsp;뒤로"
 
 msgid "(Quota exceeded)"
 msgstr "(Quota 초과)"
@@ -1441,6 +1439,7 @@ msgctxt "current status of stack"
 msgid "Check In Progress"
 msgstr "Check In Progress"
 
+#, fuzzy
 msgid "Check Stack"
 msgid_plural "Check Stacks"
 msgstr[0] "스택 확인"
@@ -3087,10 +3086,6 @@ msgstr "OpenStack RC File v2.0 다운로드"
 msgid "Download OpenStack RC File v3"
 msgstr "OPenStack RC File v3 다운로드"
 
-#, python-format
-msgid "Download key pair &quot;%(keypair_name)s&quot;"
-msgstr "키 페어 &quot;%(keypair_name)s&quot; 다운로드"
-
 msgid "EC2 Access Key"
 msgstr "EC2 접근 키"
 
@@ -4003,11 +3998,6 @@ msgstr "Floating IP:"
 msgid "Folder created successfully."
 msgstr "폴더가 성공적으로 생성되었습니다."
 
-#, python-format
-msgid "For GRE networks, valid tunnel IDs are %(min)s through %(max)s."
-msgstr ""
-"GRE 네트워크인 경우, 사용 가능한 터널 ID는 %(min)s에서 %(max)s까지 입니다."
-
 msgid ""
 "For TCP and UDP rules you may choose to open either a single port or a range "
 "of ports. Selecting the \"Port Range\" option will provide you with space to "
@@ -4017,30 +4007,6 @@ msgstr ""
 "TCP와 UDP Rule을 설정하려면, 단일 포트 또는 특정 범위의 포트를 열 수 있습니"
 "다. \"포트 범위\" 옵션을 선택하면 포트 범위 시작 값과 최종 값을 설정할 수 있"
 "습니다. 그러나 ICMP Rule은 주어진 칸에 ICMP 타입과 코드를 지정하여야 합니다. "
-
-#, python-format
-msgid ""
-"For VLAN networks, the VLAN VID on the physical network that realizes the "
-"virtual network. Valid VLAN VIDs are %(vlan_min)s through %(vlan_max)s. For "
-"GRE or VXLAN networks, the tunnel ID. Valid tunnel IDs for GRE networks are "
-"%(gre_min)s through %(gre_max)s. For VXLAN networks, %(vxlan_min)s through "
-"%(vxlan_max)s."
-msgstr ""
-"VLAN 네트워크인 경우, 물리적 네트워크에서 VLAN VID를 이용하여 가상 네트워크"
-"를 실현합니다. 사용 가능한 VLAN VID는 %(vlan_min)s에서 %(vlan_max)s까지 입니"
-"다. GRE 또는 VXLAN 네트워크의 경우, 터널 ID를 사용합니다. 사용 가능한 GRE 네"
-"트워크의 터널 ID는 %(gre_min)s에서 %(gre_max)s까지 입니다. VXLAN 네트워크는 "
-"%(vxlan_min)s에서 %(vxlan_max)s까지 입니다."
-
-#, python-format
-msgid "For VLAN networks, valid VLAN IDs are %(min)s through %(max)s."
-msgstr ""
-"VLAN 네트워크인 경우, 사용 가능한 VLAN ID는 %(min)s에서 %(max)s까지 입니다."
-
-#, python-format
-msgid "For VXLAN networks, valid tunnel IDs are %(min)s through %(max)s."
-msgstr ""
-"VXLAN 네트워크인 경우, 사용 가능한 터널 ID는 %(min)s에서 %(max)s까지 입니다."
 
 msgid "Forbidden"
 msgstr "거부했습니다"
@@ -4648,9 +4614,6 @@ msgstr "인스턴스 콘솔"
 msgid "Instance Console Log"
 msgstr "인스턴스 콘솔 로그"
 
-msgid "Instance Count"
-msgstr "인스턴스 카운트"
-
 msgid "Instance ID"
 msgstr "인스턴스 ID"
 
@@ -5143,6 +5106,7 @@ msgstr "측정 기준:"
 msgid "Migrate"
 msgstr "이동"
 
+#, fuzzy
 msgid "Migrate Host"
 msgid_plural "Migrate Hosts"
 msgstr[0] "호스트 마이그래이션"
@@ -5475,9 +5439,6 @@ msgstr ""
 msgid "Next Hops"
 msgstr "다음 홉"
 
-msgid "Next&nbsp;&raquo;"
-msgstr "다음&nbsp;&raquo;"
-
 msgid "No"
 msgstr "아니오"
 
@@ -5732,9 +5693,6 @@ msgstr "VM 인터페이스로 네트워크를 통해 들어오는 바이트 수"
 
 msgid "Number of incoming packets for a VM interface"
 msgstr "VM 인터페이스로 들어오는 패킷 수"
-
-msgid "Number of instances to launch."
-msgstr "구동시 인스턴스 수"
 
 #, python-format
 msgid ""
@@ -6477,9 +6435,6 @@ msgid "Released Floating IP"
 msgid_plural "Released Floating IPs"
 msgstr[0] "Floating IP 해제함"
 
-msgid "Reload"
-msgstr "새로 고침"
-
 msgid "Remote"
 msgstr "원격"
 
@@ -6683,6 +6638,7 @@ msgid "Resume Instance"
 msgid_plural "Resume Instances"
 msgstr[0] "인스턴스 재시작"
 
+#, fuzzy
 msgid "Resume Stack"
 msgid_plural "Resume Stacks"
 msgstr[0] "스택 재개"
@@ -7090,9 +7046,6 @@ msgstr "키 페어 선택"
 #, python-format
 msgid "Select a monitor template for %s"
 msgstr "%s에 대한 모니터 템플릿 선택"
-
-msgid "Select a name for your network."
-msgstr "네트워크 이름을 선택하십시오."
 
 msgid "Select a new QoS spec"
 msgstr "새로운 QoS 스펙 선택"
@@ -7828,6 +7781,7 @@ msgid "Suspend Instance"
 msgid_plural "Suspend Instances"
 msgstr[0] "인스턴스 일시 중단"
 
+#, fuzzy
 msgid "Suspend Stack"
 msgid_plural "Suspend Stacks"
 msgstr[0] "스팩 중지"
@@ -7986,13 +7940,6 @@ msgstr ""
 msgid "The Aggregate was updated."
 msgstr "집합을 업데이트 하였습니다."
 
-msgid ""
-"The Authorization Key will not be available after closing this page, so you "
-"must capture it now, or else you will be unable to use the transfer."
-msgstr ""
-"승인키는 해당 페이지를 닫은 이후 사용할 수 없기에, 지금 capture해야 합니다. "
-"그렇지 않으면, 전송을 사용할 수 없을 것입니다."
-
 msgid "The ICMP code is invalid."
 msgstr "ICMP 코드가 올바르지 않습니다."
 
@@ -8124,14 +8071,6 @@ msgstr "공개 키를 이용하여 인스턴스 비밀번호를 암호화합니�
 
 msgid "The instance(s) will be shut off."
 msgstr "인스턴스 전원을 끌 수 있습니다."
-
-#, python-format
-msgid ""
-"The key pair &quot;%(keypair_name)s&quot; should download automatically. If "
-"not use the link below."
-msgstr ""
-"키 페어 &quot;%(keypair_name)s&quot;는 자동으로 다운로드 됩니다. 안되면 아래 "
-"링크를 사용하세요."
 
 msgid ""
 "The maximum time in seconds for a monitor to wait for a reply. It must be "
@@ -10519,9 +10458,6 @@ msgstr ""
 "자 정의 TCP 규칙, 사용자 정의 UDP 규칙, 또는 사용자 정의 ICMP 규칙이 있습니"
 "다. "
 
-msgid "You cannot disable the user you are currently logged in as."
-msgstr "현재 로그인한 사용자를 비활성화할 수 없습니다."
-
 msgid "You cannot disable your current project"
 msgstr "현재 프로젝트를 비활성화할 수 없습니다"
 
@@ -10685,9 +10621,6 @@ msgstr "양쪽 모두"
 
 msgid "clear"
 msgstr "clear"
-
-msgid "console is currently unavailable. Please try again later."
-msgstr "콘솔을 현재 사용할 수 없습니다. 잠시 후 다시 시도하세요."
 
 msgid "disabled"
 msgstr "disabled"

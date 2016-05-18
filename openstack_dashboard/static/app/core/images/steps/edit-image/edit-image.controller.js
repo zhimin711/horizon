@@ -1,4 +1,5 @@
 /**
+ * (c) Copyright 2016 Hewlett-Packard Development Company, L.P.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may
  * not use this file except in compliance with the License. You may obtain
@@ -61,12 +62,6 @@
 
     $scope.imagePromise.then(init);
 
-    var imageChangedWatcher;
-
-    $scope.$on('$destroy', function() {
-      imageChangedWatcher();
-    });
-
     ///////////////////////////
 
     function getConfiguredFormats(response) {
@@ -93,14 +88,6 @@
         ctrl.image.disk_format = 'raw';
       }
       setFormats();
-      imageChangedWatcher = $scope.$watchCollection('ctrl.image', watchImageCollection);
-    }
-
-    // emits new data to parent listeners
-    function watchImageCollection(newValue, oldValue) {
-      if (newValue !== oldValue) {
-        $scope.$emit(events.IMAGE_CHANGED, newValue);
-      }
     }
 
     function setFormats() {

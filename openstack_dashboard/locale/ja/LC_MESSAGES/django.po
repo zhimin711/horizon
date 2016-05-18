@@ -2,19 +2,20 @@
 # OpenStack Infra <zanata@openstack.org>, 2015. #zanata
 # Shu Muto <shu-mutou@rf.jp.nec.com>, 2015. #zanata
 # Yuko Katabami <yukokatabami@gmail.com>, 2015. #zanata
+# Akihiro Motoki <amotoki@gmail.com>, 2016. #zanata
 # Andreas Jaeger <jaegerandi@gmail.com>, 2016. #zanata
 # Mie Yamamoto <myamamot@redhat.com>, 2016. #zanata
 # Shu Muto <shu-mutou@rf.jp.nec.com>, 2016. #zanata
 # Yuko Katabami <yukokatabami@gmail.com>, 2016. #zanata
 msgid ""
 msgstr ""
-"Project-Id-Version: PROJECT VERSION\n"
-"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-04-07 12:25+0000\n"
+"Project-Id-Version: horizon 9.0.1.dev276\n"
+"Report-Msgid-Bugs-To: https://bugs.launchpad.net/openstack-i18n/\n"
+"POT-Creation-Date: 2016-05-15 05:33+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2016-03-28 12:54+0000\n"
+"PO-Revision-Date: 2016-05-12 11:52+0000\n"
 "Last-Translator: Yuko Katabami <yukokatabami@gmail.com>\n"
 "Language-Team: Japanese\n"
 "Language: ja\n"
@@ -467,9 +468,6 @@ msgstr "%sGiB"
 #, python-format
 msgid "%sMB"
 msgstr "%sMB"
-
-msgid "&laquo;&nbsp;Back"
-msgstr "&laquo;&nbsp;戻る"
 
 msgid "(Quota exceeded)"
 msgstr "(クォータを超過しました)"
@@ -1403,6 +1401,9 @@ msgstr "CIDR"
 
 msgid "CIDR must be specified."
 msgstr "CIDR は指定する必要があります。"
+
+msgid "CPU architecture of the image."
+msgstr "このイメージの CPU アーキテクチャー。"
 
 msgid "CPU time used"
 msgstr "使用 CPU 時間"
@@ -3126,10 +3127,6 @@ msgstr "OpenStack RC v2.0 ファイルのダウンロード"
 msgid "Download OpenStack RC File v3"
 msgstr "OpenStack RC v3 ファイルのダウンロード"
 
-#, python-format
-msgid "Download key pair &quot;%(keypair_name)s&quot;"
-msgstr "キーペア &quot;%(keypair_name)s&quot; のダウンロード"
-
 msgid "EC2 Access Key"
 msgstr "EC2 アクセスキー"
 
@@ -4051,9 +4048,9 @@ msgid "Folder created successfully."
 msgstr "フォルダーが正常に作成されました。"
 
 #, python-format
-msgid "For GRE networks, valid tunnel IDs are %(min)s through %(max)s."
+msgid "For %(type)s networks, valid IDs are %(min)s to %(max)s."
 msgstr ""
-"GRE ネットワークでは、有効なトンネル ID は %(min)s から %(max)s までです。"
+"%(type)s ネットワークでは、有効な ID は %(min)s から %(max)s までです。"
 
 msgid ""
 "For TCP and UDP rules you may choose to open either a single port or a range "
@@ -4067,27 +4064,11 @@ msgstr ""
 
 #, python-format
 msgid ""
-"For VLAN networks, the VLAN VID on the physical network that realizes the "
-"virtual network. Valid VLAN VIDs are %(vlan_min)s through %(vlan_max)s. For "
-"GRE or VXLAN networks, the tunnel ID. Valid tunnel IDs for GRE networks are "
-"%(gre_min)s through %(gre_max)s. For VXLAN networks, %(vxlan_min)s through "
-"%(vxlan_max)s."
+"For a %(network_type)s network, valid segmentation IDs are %(min)s through "
+"%(max)s."
 msgstr ""
-"VLAN ネットワークでは、仮想ネットワークに使用する物理ネットワークの VLAN ID。"
-"有効な VLAN ID は %(vlan_min)s から %(vlan_max)s です。GRE と VXLAN ネット"
-"ワークの場合は、トンネル ID です。有効なトンネル ID は、GRE ネットワークでは "
-"%(gre_min)s から %(gre_max)s、VXLAN ネットワークでは %(vxlan_min)s から "
-"%(vxlan_max)s です。"
-
-#, python-format
-msgid "For VLAN networks, valid VLAN IDs are %(min)s through %(max)s."
-msgstr ""
-"VLAN ネットワークでは、有効な VLAN ID は %(min)s から %(max)s までです。"
-
-#, python-format
-msgid "For VXLAN networks, valid tunnel IDs are %(min)s through %(max)s."
-msgstr ""
-"VXLAN ネットワークでは、有効なトンネル ID は %(min)s から %(max)s までです。"
+"%(network_type)s ネットワークでは、有効なセグメンテーション ID は %(min)s か"
+"ら %(max)s までです。"
 
 msgid "Forbidden"
 msgstr "権限がありません"
@@ -4704,9 +4685,6 @@ msgstr "インスタンスのコンソール"
 msgid "Instance Console Log"
 msgstr "インスタンスのコンソールログ"
 
-msgid "Instance Count"
-msgstr "インスタンス数"
-
 msgid "Instance ID"
 msgstr "インスタンス ID"
 
@@ -5044,6 +5022,9 @@ msgstr ""
 "既存のオブジェクトのコピーを作成します。コピー先は同じコンテナーも別のコンテ"
 "ナーも使用できます。また、新しいコピーの格納先として選択したコンテナー内のパ"
 "ス（擬似フォルダー）を指定することもできます。"
+
+msgid "Make the image visible across projects."
+msgstr "このイメージをプロジェクトで見えるようにします。"
 
 msgid "Manage"
 msgstr "管理"
@@ -5540,9 +5521,6 @@ msgstr ""
 msgid "Next Hops"
 msgstr "ネクストホップ"
 
-msgid "Next&nbsp;&raquo;"
-msgstr "次へ&nbsp;&raquo;"
-
 msgid "No"
 msgstr "いいえ"
 
@@ -5582,6 +5560,9 @@ msgstr "使用可能なプロジェクトがありません"
 
 msgid "No flavors available"
 msgstr "利用可能なフレーバーがありません"
+
+msgid "No flavors meet minimum criteria for selected image."
+msgstr "選択したイメージの最小限の要件を満たすフレーバーがありません。"
 
 msgid "No floating IP addresses allocated"
 msgstr "確保済みの Floating IP アドレスはありません"
@@ -5642,6 +5623,9 @@ msgstr "他に利用可能なボリューム種別はありません。"
 
 msgid "No ports available"
 msgstr "ポートがありません"
+
+msgid "No ports available."
+msgstr "ポートがありません。"
 
 msgid "No projects found."
 msgstr "プロジェクトが見つかりませんでした。"
@@ -5798,9 +5782,6 @@ msgstr "VM インタフェースでのネットワーク受信バイト数"
 
 msgid "Number of incoming packets for a VM interface"
 msgstr "VM インタフェースでのネットワーク受信パケット数"
-
-msgid "Number of instances to launch."
-msgstr "起動するインスタンス数。"
 
 #, python-format
 msgid ""
@@ -6216,6 +6197,9 @@ msgctxt "Task status of an Instance"
 msgid "Preparing Resize or Migrate"
 msgstr "リサイズ/マイグレーションの準備中"
 
+msgid "Prevent the deletion of the image."
+msgstr "イメージの削除を禁止します。"
+
 msgid "Preview"
 msgstr "プレビュー"
 
@@ -6548,9 +6532,6 @@ msgid "Released Floating IP"
 msgid_plural "Released Floating IPs"
 msgstr[0] "Floating IP を解放しました"
 
-msgid "Reload"
-msgstr "再読み込み"
-
 msgid "Remote"
 msgstr "接続相手"
 
@@ -6623,6 +6604,22 @@ msgstr "バグ報告"
 
 msgid "Request ID"
 msgstr "リクエスト ID"
+
+#, python-format
+msgid "Request for launching %(count)s named \"%(name)s\" has been submitted."
+msgstr "%(count)s 個の \"%(name)s\" を起動する要求を送信しました。"
+
+#, python-format
+msgid "Request for resizing of instance \"%s\" has been submitted."
+msgstr "インスタンス \"%s\" をリサイズする要求を送信しました。"
+
+#, python-format
+msgid ""
+"Request for restoring backup %(backup_name)s to volume with id: "
+"%(volume_id)s has been submitted."
+msgstr ""
+"バックアップ %(backup_name)s をボリューム %(volume_id)s に復元する要求を送信"
+"しました。"
 
 msgid "Requested snapshot would exceed the allowed quota."
 msgstr ""
@@ -7169,9 +7166,6 @@ msgstr "キーペアを選択してください"
 msgid "Select a monitor template for %s"
 msgstr "%s 用のモニターテンプレートを選択してください"
 
-msgid "Select a name for your network."
-msgstr "ネットワークの名前を選択してください。"
-
 msgid "Select a new QoS spec"
 msgstr "新しい QoS スペックを選択してください"
 
@@ -7512,6 +7506,9 @@ msgstr[0] "インスタンスのソフトリブート"
 msgid "Soft Rebooted Instance"
 msgid_plural "Soft Rebooted Instances"
 msgstr[0] "インスタンスのソフトリブートを行いました"
+
+msgid "Some flavors not meeting minimum image requirements have been disabled."
+msgstr "イメージの最小限の要件を満たしていないフレーバーが無効になっています。"
 
 msgid "Something went wrong!"
 msgstr "どこかがおかしくなりました！"
@@ -8072,13 +8069,6 @@ msgstr ""
 msgid "The Aggregate was updated."
 msgstr "アグリゲートが更新されました。"
 
-msgid ""
-"The Authorization Key will not be available after closing this page, so you "
-"must capture it now, or else you will be unable to use the transfer."
-msgstr ""
-"認証キーはこのページを閉じると参照できなくなるので、必ず今記録してください。"
-"さもないと、作成した譲渡を使えなくなります。"
-
 msgid "The ICMP code is invalid."
 msgstr "ICMP コードが無効です。"
 
@@ -8123,6 +8113,9 @@ msgid ""
 msgstr ""
 "譲渡を受理するには、譲渡 ID と認証キーが譲渡先で必要です。譲渡 ID と認証キー"
 "を記録し、譲渡を受ける人に伝えてください。"
+
+msgid "The User Name field cannot be empty."
+msgstr "ユーザー名のフィールドを空にすることはできません。"
 
 msgid "The VNIC type that is bound to the neutron port"
 msgstr "neutron ポートにバインドする仮想 NIC の種別"
@@ -8216,7 +8209,7 @@ msgstr "インスタンスが停止されます。"
 #, python-format
 msgid ""
 "The key pair &quot;%(keypair_name)s&quot; should download automatically. If "
-"not use the link below."
+"not, use the link below."
 msgstr ""
 "キーペア &quot;%(keypair_name)s&quot; が自動的にダウンロードされます。始まら"
 "なければ、以下のリンクを使用してください。"
@@ -10632,9 +10625,6 @@ msgstr ""
 "希望のルールテンプレートを指定するか、カスタムルールを設定することができま"
 "す。カスタムルールには TCP、UDP、ICMP  ルールがあります。"
 
-msgid "You cannot disable the user you are currently logged in as."
-msgstr "現在ログインしているユーザーは無効化できません。"
-
 msgid "You cannot disable your current project"
 msgstr "現在使用しているプロジェクトは無効化できません。"
 
@@ -10801,9 +10791,6 @@ msgstr "両方"
 
 msgid "clear"
 msgstr "clear"
-
-msgid "console is currently unavailable. Please try again later."
-msgstr "コンソールが現在利用できません。後からもう一度お試しください。"
 
 msgid "disabled"
 msgstr "disabled"

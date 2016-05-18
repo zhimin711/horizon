@@ -48,6 +48,8 @@ WEBROOT = '/'
 LOGIN_URL = None
 LOGOUT_URL = None
 LOGIN_REDIRECT_URL = None
+MEDIA_ROOT = None
+MEDIA_URL = None
 STATIC_ROOT = None
 STATIC_URL = None
 
@@ -122,6 +124,15 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'horizon.context_processors.horizon',
     'openstack_dashboard.context_processors.openstack',
 )
+
+TEMPLATE_LOADERS = ('horizon.themes.ThemeTemplateLoader',)
+
+CACHED_TEMPLATE_LOADERS = (
+    'django.template.loaders.filesystem.Loader',
+    'django.template.loaders.app_directories.Loader',
+    'horizon.loaders.TemplateLoader',)
+
+ADD_TEMPLATE_LOADERS = []
 
 TEMPLATE_DIRS = (
     os.path.join(ROOT_PATH, 'templates'),
@@ -278,20 +289,24 @@ THEME_COLLECTION_DIR = 'themes'
 # Theme Cookie Name
 THEME_COOKIE_NAME = 'theme'
 
+POLICY_CHECK_FUNCTION = None
+
+CSRF_COOKIE_AGE = None
+
+COMPRESS_OFFLINE_CONTEXT = 'horizon.themes.offline_context'
+
+# Notice all customizable configurations should be above this line
 try:
     from local.local_settings import *  # noqa
 except ImportError:
     logging.warning("No local_settings file found.")
 
-_LOADERS = ('django.template.loaders.filesystem.Loader',
-            'django.template.loaders.app_directories.Loader',
-            'horizon.loaders.TemplateLoader',)
-
 if DEBUG:
-    TEMPLATE_LOADERS = ('horizon.themes.ThemeTemplateLoader',) + _LOADERS
+    TEMPLATE_LOADERS += CACHED_TEMPLATE_LOADERS + tuple(ADD_TEMPLATE_LOADERS)
 else:
-    TEMPLATE_LOADERS = ('horizon.themes.ThemeTemplateLoader',
-                        ('django.template.loaders.cached.Loader', _LOADERS),)
+    TEMPLATE_LOADERS += (
+        ('django.template.loaders.cached.Loader', CACHED_TEMPLATE_LOADERS),
+    ) + tuple(ADD_TEMPLATE_LOADERS)
 
 # allow to drop settings snippets into a local_settings_dir
 LOCAL_SETTINGS_DIR_PATH = os.path.join(ROOT_PATH, "local", "local_settings.d")
@@ -320,8 +335,11 @@ if LOGOUT_URL is None:
 if LOGIN_REDIRECT_URL is None:
     LOGIN_REDIRECT_URL = WEBROOT
 
-MEDIA_ROOT = os.path.abspath(os.path.join(ROOT_PATH, '..', 'media'))
-MEDIA_URL = WEBROOT + 'media/'
+if MEDIA_ROOT is None:
+    MEDIA_ROOT = os.path.abspath(os.path.join(ROOT_PATH, '..', 'media'))
+
+if MEDIA_URL is None:
+    MEDIA_URL = WEBROOT + 'media/'
 
 if STATIC_ROOT is None:
     STATIC_ROOT = os.path.abspath(os.path.join(ROOT_PATH, '..', 'static'))
@@ -389,7 +407,8 @@ def check(actions, request, target=None):
     from openstack_auth import policy
     return policy.check(actions, request, target=None)
 
-POLICY_CHECK_FUNCTION = check
+if POLICY_CHECK_FUNCTION is None:
+    POLICY_CHECK_FUNCTION = check
 
 # This base context objects gets added to the offline context generator
 # for each theme configured.
@@ -399,9 +418,5 @@ HORIZON_COMPRESS_OFFLINE_CONTEXT_BASE = {
     'HORIZON_CONFIG': HORIZON_CONFIG
 }
 
-COMPRESS_OFFLINE_CONTEXT = 'horizon.themes.offline_context'
-
 if DEBUG:
     logging.basicConfig(level=logging.DEBUG)
-
-CSRF_COOKIE_AGE = None

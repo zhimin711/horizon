@@ -24,9 +24,9 @@
 # Ilya Alekseyev <ilyaalekseyev@acm.org>, 2016. #zanata
 msgid ""
 msgstr ""
-"Project-Id-Version: PROJECT VERSION\n"
-"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-04-07 12:25+0000\n"
+"Project-Id-Version: horizon 9.0.1.dev276\n"
+"Report-Msgid-Bugs-To: https://bugs.launchpad.net/openstack-i18n/\n"
+"POT-Creation-Date: 2016-05-15 05:33+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -482,9 +482,6 @@ msgstr "%s ГиБ"
 #, python-format
 msgid "%sMB"
 msgstr "%s МБ"
-
-msgid "&laquo;&nbsp;Back"
-msgstr "&laquo;&nbsp;Назад"
 
 msgid "(Quota exceeded)"
 msgstr "(Превышена квота)"
@@ -1485,6 +1482,7 @@ msgctxt "current status of stack"
 msgid "Check In Progress"
 msgstr "Выполняется провека"
 
+#, fuzzy
 msgid "Check Stack"
 msgid_plural "Check Stacks"
 msgstr[0] "Проверить стек"
@@ -3313,10 +3311,6 @@ msgstr "Скачать OpenStack RC-файл версии 2.0"
 msgid "Download OpenStack RC File v3"
 msgstr "Скачать OpenStack RC-файл версии 3"
 
-#, python-format
-msgid "Download key pair &quot;%(keypair_name)s&quot;"
-msgstr "Загрузить пары ключей &quot;%(keypair_name)s&quot;"
-
 msgid "EC2 Access Key"
 msgstr "EC2 Access Key"
 
@@ -4248,10 +4242,6 @@ msgstr "Плавающие IP:"
 msgid "Folder created successfully."
 msgstr "Каталог успешно создан."
 
-#, python-format
-msgid "For GRE networks, valid tunnel IDs are %(min)s through %(max)s."
-msgstr "Для GRE сетей допустимые ID туннелей от %(min)s до %(max)s."
-
 msgid ""
 "For TCP and UDP rules you may choose to open either a single port or a range "
 "of ports. Selecting the \"Port Range\" option will provide you with space to "
@@ -4262,27 +4252,6 @@ msgstr ""
 "Выбор опции \"Диапазон Портов\" предоставит вам форму для ввода начального и "
 "конечного портов диапазона. Для ICMP правил вам необходимо будет указать "
 "ICMP тип и код в предоставленной форме."
-
-#, python-format
-msgid ""
-"For VLAN networks, the VLAN VID on the physical network that realizes the "
-"virtual network. Valid VLAN VIDs are %(vlan_min)s through %(vlan_max)s. For "
-"GRE or VXLAN networks, the tunnel ID. Valid tunnel IDs for GRE networks are "
-"%(gre_min)s through %(gre_max)s. For VXLAN networks, %(vxlan_min)s through "
-"%(vxlan_max)s."
-msgstr ""
-"Для VLAN сетей VLAN VID физической сети, которая реализует виртуальную сеть. "
-"Допустимые VLAN VIDs от %(vlan_min)s до %(vlan_max)s. Для GRE или VXLAN "
-"сетей ID туннеля. Допустимые ID туннелей для GRE сетей от %(gre_min)s до "
-"%(gre_max)s. Для VXLAN сетей от %(vxlan_min)s до %(vxlan_max)s."
-
-#, python-format
-msgid "For VLAN networks, valid VLAN IDs are %(min)s through %(max)s."
-msgstr "Для VLAN сетей допустимые VLAN IDs от %(min)s до %(max)s."
-
-#, python-format
-msgid "For VXLAN networks, valid tunnel IDs are %(min)s through %(max)s."
-msgstr "Для VXLAN сетей допустимые ID туннелей от %(min)s до %(max)s."
 
 msgid "Forbidden"
 msgstr "Запрещено"
@@ -4904,9 +4873,6 @@ msgstr "Консоль инстанса"
 msgid "Instance Console Log"
 msgstr "Лог консоли инстанса"
 
-msgid "Instance Count"
-msgstr "Количество инстансов"
-
 msgid "Instance ID"
 msgstr "ID инстанса"
 
@@ -5411,6 +5377,7 @@ msgstr "Метрика:"
 msgid "Migrate"
 msgstr "Миграция"
 
+#, fuzzy
 msgid "Migrate Host"
 msgid_plural "Migrate Hosts"
 msgstr[0] "Мигрировать узел"
@@ -5752,9 +5719,6 @@ msgstr ""
 msgid "Next Hops"
 msgstr "Следующие переходы"
 
-msgid "Next&nbsp;&raquo;"
-msgstr "Следующее&nbsp;&raquo;"
-
 msgid "No"
 msgstr "Нет"
 
@@ -6012,9 +5976,6 @@ msgstr "Объем входящего трафика на сетевом инт�
 
 msgid "Number of incoming packets for a VM interface"
 msgstr "Количество входящих пакетов на интерфейсе ВМ"
-
-msgid "Number of instances to launch."
-msgstr "Число инстансов для запуска."
 
 #, python-format
 msgid ""
@@ -6771,9 +6732,6 @@ msgstr[0] "Освобожденный плавающий IP"
 msgstr[1] "Освобожденные плавающие IP"
 msgstr[2] "Плавающие IP освобождены"
 
-msgid "Reload"
-msgstr "Загрузить снова"
-
 msgid "Remote"
 msgstr "Удаленный адрес"
 
@@ -6983,6 +6941,7 @@ msgstr[0] "Возобновить инстанс"
 msgstr[1] "Возобновить инстансы"
 msgstr[2] "Возобновить инстансы"
 
+#, fuzzy
 msgid "Resume Stack"
 msgid_plural "Resume Stacks"
 msgstr[0] "Возобновить стек"
@@ -7432,9 +7391,6 @@ msgstr "Выберите связку ключей"
 #, python-format
 msgid "Select a monitor template for %s"
 msgstr "Выберите шаблон монитора для %s"
-
-msgid "Select a name for your network."
-msgstr "Выберите название сети."
 
 msgid "Select a new QoS spec"
 msgstr "Выберите новую спецификацию QoS"
@@ -8192,6 +8148,7 @@ msgstr[0] "Остановить инстанс"
 msgstr[1] "Остановить инстансы"
 msgstr[2] "Остановить инстансы"
 
+#, fuzzy
 msgid "Suspend Stack"
 msgid_plural "Suspend Stacks"
 msgstr[0] "Остановить стек"
@@ -8358,13 +8315,6 @@ msgstr ""
 msgid "The Aggregate was updated."
 msgstr "Агрегатор был обновлён."
 
-msgid ""
-"The Authorization Key will not be available after closing this page, so you "
-"must capture it now, or else you will be unable to use the transfer."
-msgstr ""
-"Ключ авторизации будет нельзя получить повторно после закрытия этой "
-"страницы, сохраните его сейчас иначе вы не сможете воспользоваться передачей."
-
 msgid "The ICMP code is invalid."
 msgstr "Неверный ICMP код."
 
@@ -8499,14 +8449,6 @@ msgstr "Пароль инстансы зашифрован вашим откры
 
 msgid "The instance(s) will be shut off."
 msgstr "Инстанс(ы) будет выключен."
-
-#, python-format
-msgid ""
-"The key pair &quot;%(keypair_name)s&quot; should download automatically. If "
-"not use the link below."
-msgstr ""
-"Загрузка пары ключей &quot;%(keypair_name)s&quot; должна начаться "
-"автоматически. Если этого не произошло, используйте ссылку внизу."
 
 msgid ""
 "The maximum time in seconds for a monitor to wait for a reply. It must be "
@@ -10942,9 +10884,6 @@ msgstr ""
 "правила через опции Настраиваемое TCP Правило, Настраиваемое UDP Правило или "
 "Настраиваемое ICMP Правило."
 
-msgid "You cannot disable the user you are currently logged in as."
-msgstr "Нельзя выключить активного пользователя."
-
 msgid "You cannot disable your current project"
 msgstr "Вы не можете отключить свой текущий проект"
 
@@ -11110,10 +11049,6 @@ msgstr "оба"
 
 msgid "clear"
 msgstr "очистить"
-
-msgid "console is currently unavailable. Please try again later."
-msgstr ""
-"консоль в текущий момент недоступна. Пожалуйста повторите попытку позже."
 
 msgid "disabled"
 msgstr "выключено"

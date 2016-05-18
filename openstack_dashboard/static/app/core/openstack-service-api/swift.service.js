@@ -161,8 +161,12 @@
      */
     function deleteContainer(container) {
       return apiService.delete(service.getContainerURL(container) + '/metadata/')
-        .error(function () {
-          toastService.add('error', gettext('Unable to delete the container.'));
+        .error(function (response, status) {
+          if (status === 409) {
+            toastService.add('error', response);
+          } else {
+            toastService.add('error', gettext('Unable to delete the container.'));
+          }
         });
     }
 
@@ -229,12 +233,21 @@
         fd,
         {
           headers: {
-            'Content-Type': ''
+            // This is seriously weird magic on the part of various JS things here, but
+            // in short, setting the Content-Type to undefined (and *not* empty-string)
+            // will result in the AJAX POST filling in multipart/form-data with an
+            // appropriate boundary because we're including a FormData object with a
+            // file as the post data. Seriously.
+            'Content-Type': undefined
           }
         }
       )
-        .error(function () {
-          toastService.add('error', gettext('Unable to upload the object.'));
+        .error(function (response, status) {
+          if (status === 409) {
+            toastService.add('error', response);
+          } else {
+            toastService.add('error', gettext('Unable to upload the object.'));
+          }
         });
     }
 
@@ -294,8 +307,12 @@
         service.getObjectURL(container, folderName) + '/',
         {}
       )
-        .error(function () {
-          toastService.add('error', gettext('Unable to create the folder.'));
+        .error(function (response, status) {
+          if (status === 409) {
+            toastService.add('error', response);
+          } else {
+            toastService.add('error', gettext('Unable to create the folder.'));
+          }
         });
     }
 
@@ -315,8 +332,12 @@
         service.getObjectURL(container, objectName, 'copy'),
         {dest_container: destContainer, dest_name: destName}
       )
-        .error(function () {
-          toastService.add('error', gettext('Unable to copy the object.'));
+        .error(function (response, status) {
+          if (status === 409) {
+            toastService.add('error', response);
+          } else {
+            toastService.add('error', gettext('Unable to copy the object.'));
+          }
         });
     }
   }

@@ -1,9 +1,9 @@
 # OpenStack Infra <zanata@openstack.org>, 2015. #zanata
 msgid ""
 msgstr ""
-"Project-Id-Version: PROJECT VERSION\n"
-"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-04-07 12:25+0000\n"
+"Project-Id-Version: horizon 9.0.1.dev276\n"
+"Report-Msgid-Bugs-To: https://bugs.launchpad.net/openstack-i18n/\n"
+"POT-Creation-Date: 2016-05-15 05:33+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1754,10 +1754,6 @@ msgstr "EC2 फोथायथावखौ डाउनल'ड खालाम"
 msgid "Download Key Pair"
 msgstr "साबि जराखौ डाउनल'ड खालाम"
 
-#, python-format
-msgid "Download key pair &quot;%(keypair_name)s&quot;"
-msgstr "साबि जरा &quot;%(keypair_name)s&quot; खौ डाउनल'ड खालाम"
-
 msgid "EC2 Access Key"
 msgstr "EC2 हाबनाय साबि"
 
@@ -2420,10 +2416,6 @@ msgstr "फ्ल'टिं IP"
 msgid "Folder created successfully."
 msgstr "फल्डारखौ जाफुंसारै सोरजिबाय।"
 
-#, python-format
-msgid "For GRE networks, valid tunnel IDs are %(min)s through %(max)s."
-msgstr "GRE नेटवार्कनि थाखाय, बाहाय जाथाव टानेल IDs आ %(max)s नि गेजेरजों %(min)s"
-
 msgid ""
 "For TCP and UDP rules you may choose to open either a single port or a range "
 "of ports. Selecting the \"Port Range\" option will provide you with space to "
@@ -2434,28 +2426,6 @@ msgstr ""
 "हागौ। \"पर्ट सिमासारि\" उफ्राखौ सायखयोब्ला सिमासारिनि थाखाय जागायनाय आरो जोबनाय "
 "पर्ट मोननैबो होनो नोंथांनो स्पेस (जायगा) होगोन। ICMP नियमनि थाखाय, बेनि सोलायै "
 "नोंथाङा मोनसे ICMP रोखोम आरो क'डखौ होखानाय स्पेस (जायगा)खौ थिक खालामो।"
-
-#, python-format
-msgid ""
-"For VLAN networks, the VLAN VID on the physical network that realizes the "
-"virtual network. Valid VLAN VIDs are %(vlan_min)s through %(vlan_max)s. For "
-"GRE or VXLAN networks, the tunnel ID. Valid tunnel IDs for GRE networks are "
-"%(gre_min)s through %(gre_max)s. For VXLAN networks, %(vxlan_min)s through "
-"%(vxlan_max)s."
-msgstr ""
-"VLAN नेटवार्कनि थाखाय, देहायारि नेटवार्कआव थानाय VLAN VID आ नुथाव नेटवार्कखौ "
-"दिन्थियो। बाहाय जाथाव VLAN VID आ %(vlan_max)s नि गेजेरजों %(vlan_min)s। GRE एबा "
-"VXLAN नेटवार्कनि थाखाय, टानेल ID। GRE नेटवार्कनि थाखाय बाहाय जाथाव टानेलID आ "
-"%(gre_max)s नि गेजेरजों %(gre_min)s जायो। VXLAN नेटवार्कनि थाखाय, %(vxlan_max)s "
-"नि गेजेरजों %(vxlan_min)s"
-
-#, python-format
-msgid "For VLAN networks, valid VLAN IDs are %(min)s through %(max)s."
-msgstr "VLAN नेटवार्कनि थाखाय, बाहाय जाथाव VLAN IDs आ %(max)s नि गेजेरजों %(min)s"
-
-#, python-format
-msgid "For VXLAN networks, valid tunnel IDs are %(min)s through %(max)s."
-msgstr "VXLAN नेटवार्कनि थाखाय, बाहाय जाथाव टानेल IDs आ %(max)s नि गेजेरजों %(min)s"
 
 msgid "Forbidden"
 msgstr "हेंथा होजाबाय"
@@ -2919,9 +2889,6 @@ msgstr "बिदिन्थि कनस'ल"
 
 msgid "Instance Console Log"
 msgstr "बिदिन्थि कनस'ल लग"
-
-msgid "Instance Count"
-msgstr "बिदिन्थि हिसाब"
 
 msgid "Instance ID"
 msgstr "बिदिन्थि ID"
@@ -3696,9 +3663,6 @@ msgstr "VM इन्टारफेसनि थाखाय नेटवार�
 msgid "Number of incoming packets for a VM interface"
 msgstr "VM इन्टारफेसनि थाखाय नेटवार्कआव हाबफैनाय पकेटनि अनजिमा"
 
-msgid "Number of instances to launch."
-msgstr "जागायनो बिदिन्थिनि अनजिमा।"
-
 msgid "Number of objects"
 msgstr "बेसादनि अनजिमा"
 
@@ -4202,9 +4166,6 @@ msgstr ""
 "एखे गिलिरखौ सायखखानाय गासै सोद्रोमायाव बाहायगोन आरो उनाव सुद्रायनो हायो। गिलिरआ 1 "
 "निफ्राय 256 नि गेजेरनि सिमायाव जानांगोन।"
 
-msgid "Reload"
-msgstr "फिन ल'ड खालाम"
-
 msgid "Remote"
 msgstr "रिमट"
 
@@ -4566,9 +4527,6 @@ msgstr "जरा साबिखौ सायख"
 #, python-format
 msgid "Select a monitor template for %s"
 msgstr "%s नि थाखाय मनिटर टेमप्लेट सायख"
-
-msgid "Select a name for your network."
-msgstr "नोंथांनि नेटवार्कनि थाखाय मोनसे मुंखौ सायख।"
 
 msgid "Select a new agent"
 msgstr "गोदान थान्दै सायख"
@@ -5239,14 +5197,6 @@ msgstr "बिदिन्थिआ लाइभ माइग्रेसनख�
 
 msgid "The instance password encrypted with your public key."
 msgstr "बिदिन्थि पासवार्डआ नोंथांनि राइजो-राजा साबिजों एनक्राइप्ट खालामबाय।"
-
-#, python-format
-msgid ""
-"The key pair &quot;%(keypair_name)s&quot; should download automatically. If "
-"not use the link below."
-msgstr ""
-"साबि जरा &quot;%(keypair_name)s&quot; आ गावनो गाव महरै डाउनल'ड खालामनांगोन। "
-"नङाब्ला गाहायनि लिंकखौ बाहाय।"
 
 msgid ""
 "The minimum disk size required to boot the image. If unspecified, this value "
@@ -6888,9 +6838,6 @@ msgstr ""
 "नोंथाङा लुबैनाय नियम टेमप्लेटखौ थिक खालामनो एबा कास्टम नियमखौ बाहायनो हायो, उफ्राया "
 "कास्टम TCP नियम, कास्टम UDP नियम, एबा कास्टम ICMP नियम।"
 
-msgid "You cannot disable the user you are currently logged in as."
-msgstr "नोंथाङा दासान्दि लग-इन खालामनाय बाहायग्राखौ लोरबां खालामनो हाया।"
-
 msgid ""
 "You cannot revoke your administrative privileges from the domain you are "
 "currently logged into. Please switch to another domain with administrative "
@@ -7037,9 +6984,6 @@ msgstr "मोननैबो"
 
 msgid "clear"
 msgstr "खोमोर"
-
-msgid "console is currently unavailable. Please try again later."
-msgstr "कनस'लआ दासान्दि मोननो हाथावै। अननानै उनाव फिन नाजा।"
 
 msgid "disabled"
 msgstr "लोरबां खालामबाय"

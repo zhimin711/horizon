@@ -238,6 +238,7 @@ OPENSTACK_KEYSTONE_BACKEND = {
 # properties found in the Launch Instance modal.
 #LAUNCH_INSTANCE_DEFAULTS = {
 #    'config_drive': False,
+#    'enable_scheduler_hints': True
 #}
 
 # The Xen Hypervisor has the ability to set the mount point for volumes
@@ -270,17 +271,12 @@ OPENSTACK_NEUTRON_NETWORK = {
     'enable_vpn': True,
     'enable_fip_topology_check': True,
 
-    # Neutron can be configured with a default Subnet Pool to be used for IPv4
-    # subnet-allocation. Specify the label you wish to display in the Address
-    # pool selector on the create subnet step if you want to use this feature.
-    'default_ipv4_subnet_pool_label': None,
-
-    # Neutron can be configured with a default Subnet Pool to be used for IPv6
-    # subnet-allocation. Specify the label you wish to display in the Address
-    # pool selector on the create subnet step if you want to use this feature.
-    # You must set this to enable IPv6 Prefix Delegation in a PD-capable
-    # environment.
-    'default_ipv6_subnet_pool_label': None,
+    # Default dns servers you would like to use when a subnet is
+    # created.  This is only a default, users can still choose a different
+    # list of dns servers when creating a new subnet.
+    # The entries below are examples only, and are not appropriate for
+    # real deployments
+    # 'default_dns_nameservers': ["8.8.8.8", "8.8.4.4", "208.67.222.222"],
 
     # The profile_support option is used to detect if an external router can be
     # configured via the dashboard. When using specific plugins the
@@ -290,7 +286,7 @@ OPENSTACK_NEUTRON_NETWORK = {
 
     # Set which provider network types are supported. Only the network types
     # in this list will be available to choose from when creating a network.
-    # Network types include local, flat, vlan, gre, and vxlan.
+    # Network types include local, flat, vlan, gre, vxlan and geneve.
     # 'supported_provider_types': ['*'],
 
     # You can configure available segmentation ID range per network type
@@ -737,3 +733,7 @@ REST_API_REQUIRED_SETTINGS = ['OPENSTACK_HYPERVISOR_FEATURES',
 # For more information see:
 # http://tinyurl.com/anticlickjack
 #DISALLOW_IFRAME_EMBED = True
+
+# Help URL can be made available for the client. To provide a help URL, edit the
+# following attribute to the URL of your choice.
+#HORIZON_CONFIG["help_url"] = "http://openstack.mycompany.org"

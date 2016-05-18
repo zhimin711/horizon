@@ -16,6 +16,9 @@
 (function () {
   'use strict';
 
+  // Constants used within this file
+  var VOLUME_RESOURCE_TYPE = 'OS::Cinder::Volume';
+
   /**
    * @ngdoc overview
    * @name horizon.app.core
@@ -38,16 +41,24 @@
       'horizon.framework.widgets',
       'horizon.dashboard.project.workflow'
     ], config)
+    // NOTE: this will move into the correct module as that resource type
+    // becomes available.  For now there is no volumes module.
+    .constant('horizon.app.core.volumes.resourceType', VOLUME_RESOURCE_TYPE)
     .run([
       'horizon.framework.conf.resource-type-registry.service',
       performRegistrations
     ]);
 
-  config.$inject = ['$provide', '$windowProvider'];
+  config.$inject = ['$provide', '$windowProvider', '$routeProvider'];
 
-  function config($provide, $windowProvider) {
+  function config($provide, $windowProvider, $routeProvider) {
     var path = $windowProvider.$get().STATIC_URL + 'app/core/';
     $provide.constant('horizon.app.core.basePath', path);
+    $routeProvider
+      .when('/project/ngdetails/:type/:path', {
+        templateUrl: $windowProvider.$get().STATIC_URL +
+          'framework/widgets/details/routed-details-view.html'
+      });
   }
 
   function performRegistrations(registry) {
@@ -64,6 +75,9 @@
     registry.getResourceType('OS::Nova::Flavor', {
       names: [gettext('Flavor'), gettext('Flavors')]
     });
+    registry.getResourceType('OS::Nova::Hypervisor', {
+      names: [gettext('Hypervisor'), gettext('Hypervisors')]
+    });
     registry.getResourceType('OS::Nova::Keypair', {
       names: [gettext('Key Pair'), gettext('Key Pairs')]
     });
@@ -79,11 +93,8 @@
     registry.getResourceType('OS::Cinder::Snapshot', {
       names: [gettext('Volume Snapshot'), gettext('Volume Snapshots')]
     });
-    registry.getResourceType('OS::Cinder::Volume', {
+    registry.getResourceType(VOLUME_RESOURCE_TYPE, {
       names: [gettext('Volume'), gettext('Volumes')]
-    });
-    registry.getResourceType('OS::Nova::Flavor', {
-      names: [gettext('Flavor'), gettext('Flavors')]
     });
     registry.getResourceType('OS::Swift::Account', {
       names: [gettext('Object Account'), gettext('Object Accounts')]

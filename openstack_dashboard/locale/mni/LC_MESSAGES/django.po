@@ -1,9 +1,9 @@
 # OpenStack Infra <zanata@openstack.org>, 2015. #zanata
 msgid ""
 msgstr ""
-"Project-Id-Version: PROJECT VERSION\n"
-"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-04-07 12:25+0000\n"
+"Project-Id-Version: horizon 9.0.1.dev276\n"
+"Report-Msgid-Bugs-To: https://bugs.launchpad.net/openstack-i18n/\n"
+"POT-Creation-Date: 2016-05-15 05:33+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1717,10 +1717,6 @@ msgstr "EC2 ক্রিদেন্সিএলশীং দাউনলোদ 
 msgid "Download Key Pair"
 msgstr "কী পেয়র দাউনলোদ তৌ"
 
-#, python-format
-msgid "Download key pair &quot;%(keypair_name)s&quot;"
-msgstr "কী পেয়র &quot;%(keypair_name)s&quot; দাউনলোদ তৌ"
-
 msgid "EC2 Access Key"
 msgstr "EC2 এক্সেস কী"
 
@@ -2376,11 +2372,6 @@ msgstr "ফ্লোতিং IPশীং"
 msgid "Folder created successfully."
 msgstr "ফোলদর মায় পাক্না শেম্লে।"
 
-#, python-format
-msgid "For GRE networks, valid tunnel IDs are %(min)s through %(max)s."
-msgstr ""
-"GRE নেতৱার্কশীংগীদি, চৎনবা য়াবা তনেল IDশীং অসি %(max)s ফাউরগা %(min)s ওই।  "
-
 msgid ""
 "For TCP and UDP rules you may choose to open either a single port or a range "
 "of ports. Selecting the \"Port Range\" option will provide you with space to "
@@ -2391,30 +2382,6 @@ msgstr ""
 "মনুংদা অমা হাংনবা খনবা য়াই। \"পোর্ত রেঞ্জ\" ওপশন খনবনা নঙোন্দা রেঞ্জ অদুগী অহৌবা "
 "অমসুং অরোইবা পোর্ত অনিমক্কী স্পেস পীগনি। ICMP রুলশীংগীদমক্তদি নহাক্না ICMP মখল অমসুং "
 "কোদ অমা পীরিবা স্পেস অদুদা তাকউ।"
-
-#, python-format
-msgid ""
-"For VLAN networks, the VLAN VID on the physical network that realizes the "
-"virtual network. Valid VLAN VIDs are %(vlan_min)s through %(vlan_max)s. For "
-"GRE or VXLAN networks, the tunnel ID. Valid tunnel IDs for GRE networks are "
-"%(gre_min)s through %(gre_max)s. For VXLAN networks, %(vxlan_min)s through "
-"%(vxlan_max)s."
-msgstr ""
-"VLAN নেতৱার্কশীংগীদি, ভর্চুএল নেতৱার্ক অদু পুথোক্লিবা ফিজিকেল নেতৱার্কতা VLAN VID "
-"ওই। চৎনবা য়াবা VLAN VIDশীংদি %(vlan_max)s ফাউদুনা %(vlan_min)s ওই। GRE নত্ত্রগা "
-"VXLAN নেতৱার্কশীংগীদি, তনেল ID ওই। GRE নেতৱার্কশীংগী চৎনবা য়াবা তনেল IDশীংদি "
-"%(gre_max)s ফাউদুনা %(gre_min)s ওই। VXLAN নেতৱার্কশীংগীদি, %(vxlan_max)s "
-"ফাউদুনা %(vxlan_min)s ওই।"
-
-#, python-format
-msgid "For VLAN networks, valid VLAN IDs are %(min)s through %(max)s."
-msgstr ""
-"VLAN নেতৱার্কশীংগীদি, চৎনবা য়াবা VLAN IDশীং অসি %(max)s ফাউরগা %(min)s ওই।"
-
-#, python-format
-msgid "For VXLAN networks, valid tunnel IDs are %(min)s through %(max)s."
-msgstr ""
-"VXLAN নেতৱার্কশীংগীদি, চৎনবা য়াবা তনেল IDশীং অসি %(max)s ফাউরগা %(min)s ওই।  "
 
 msgid "Forbidden"
 msgstr "অথীংবা লৈরবা"
@@ -2857,9 +2824,6 @@ msgstr "ইন্সতেন্স কন্সোল"
 
 msgid "Instance Console Log"
 msgstr "ইন্সতেন্স কন্সোল লোগ"
-
-msgid "Instance Count"
-msgstr "ইন্সতেন্স মশীং"
 
 msgid "Instance ID"
 msgstr "ইন্সতেন্স ID"
@@ -3636,9 +3600,6 @@ msgstr "VM ইন্তর্ফেস অমগী নেতৱার্কক�
 msgid "Number of incoming packets for a VM interface"
 msgstr "VM ইন্তর্ফেস অমগী ইনকমিং পেকেত মশীং"
 
-msgid "Number of instances to launch."
-msgstr "শেমগৎকদবা ইন্সতেন্সশীংগী মশীং"
-
 msgid "Number of objects"
 msgstr "পোৎশকশীংগী মশীং"
 
@@ -4087,9 +4048,6 @@ msgstr ""
 "খল্লবা মেম্বর পুম্নমক্তা মান্নবা ৱেইত অদু এপ্লাই তৌগনি অমসুং মতুংদা শেমদোক-শেমজিন তৌবা "
 "য়াই। ৱেইত অদু 1দগী 256 ফাউবগী রেঞ্জদা ওইগদবনি।"
 
-msgid "Reload"
-msgstr "রিলোদ তৌ"
-
 msgid "Remote"
 msgstr "রিমোত"
 
@@ -4412,9 +4370,6 @@ msgstr "কী পেয়র অমা খল্লু"
 #, python-format
 msgid "Select a monitor template for %s"
 msgstr "%sগীদমক মোনিতর তেমপ্লেত অমা খল্লু"
-
-msgid "Select a name for your network."
-msgstr "নহাক্কী নেতৱার্ক্কী মমীং অমা খল্লু।"
 
 msgid "Select a new agent"
 msgstr "অনৌবা এজেন্ত অমা খল্লু"
@@ -5033,14 +4988,6 @@ msgstr "হোষ্ট \"%s\"দা লাইভ মাইগ্রেসন �
 
 msgid "The instance password encrypted with your public key."
 msgstr "নহাক্কী পব্লিক কীনা এনক্রিপ্ত তৌরবা ইন্সতেন্স পাসৱার্দ।"
-
-#, python-format
-msgid ""
-"The key pair &quot;%(keypair_name)s&quot; should download automatically. If "
-"not use the link below."
-msgstr ""
-"কী পেয়র &quot;%(keypair_name)s&quot; অদু মশা মথন্তা দাউনলোদ তৌজগদবনি। করিগুম্বা "
-"তৌদ্রবদি মখাগী লিঙ্ক অসি শীজিন্নৌ।"
 
 msgid ""
 "The minimum disk size required to boot the image. If unspecified, this value "
@@ -6675,9 +6622,6 @@ msgstr ""
 "নহাক্না অপাম্বা রুল তেমপ্লেত তাকপা য়াই নত্ত্রগা কষ্টম রুলশীং শীজিন্নবা য়াই, ওপসনশীংদি "
 "কষ্টম TCP রুল, কষ্টম UDP রুল, নত্ত্রগা কষ্টম ICMP রুল অসিনি।"
 
-msgid "You cannot disable the user you are currently logged in as."
-msgstr "নহাক্না হৌজিক লোগ ইন তৌরিবা য়ুজর অদু নহাক্না দিসএবল তৌবা য়াদে।"
-
 msgid ""
 "You cannot revoke your administrative privileges from the domain you are "
 "currently logged into. Please switch to another domain with administrative "
@@ -6827,9 +6771,6 @@ msgstr "বাই-দিরেকস্নেল"
 
 msgid "clear"
 msgstr "ক্লিয়র তৌ"
-
-msgid "console is currently unavailable. Please try again later."
-msgstr "কন্সোল অসি হৌজিক্কী ওইনা ফংদে। চানবীদুনা মতুংদা অমুক হন্না হোৎনবীয়ু।"
 
 msgid "disabled"
 msgstr "দিসএবল তৌরে"

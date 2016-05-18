@@ -4,18 +4,20 @@
 # Gladys Guerrero <gguerrer@redhat.com>, 2015. #zanata
 # Marian Tort <marian.tort@gmail.com>, 2015. #zanata
 # OpenStack Infra <zanata@openstack.org>, 2015. #zanata
+# Alberto Laporte <alberto.riveralaporte@rackspace.com>, 2016. #zanata
 # Alberto Molina Coballes <alb.molina@gmail.com>, 2016. #zanata
 # Eduardo Gonzalez Gutierrez <dabarren@gmail.com>, 2016. #zanata
+# OpenStack Infra <zanata@openstack.org>, 2016. #zanata
 msgid ""
 msgstr ""
-"Project-Id-Version: PROJECT VERSION\n"
-"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-04-07 12:25+0000\n"
+"Project-Id-Version: horizon 9.0.1.dev276\n"
+"Report-Msgid-Bugs-To: https://bugs.launchpad.net/openstack-i18n/\n"
+"POT-Creation-Date: 2016-05-15 05:33+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2016-02-09 11:15+0000\n"
-"Last-Translator: Eduardo Gonzalez Gutierrez <dabarren@gmail.com>\n"
+"PO-Revision-Date: 2016-04-09 08:09+0000\n"
+"Last-Translator: Alberto Laporte <alberto.riveralaporte@rackspace.com>\n"
 "Language-Team: Spanish\n"
 "Language: es\n"
 "X-Generator: Zanata 3.7.3\n"
@@ -464,9 +466,6 @@ msgstr "%sGiB"
 #, python-format
 msgid "%sMB"
 msgstr "%sMB"
-
-msgid "&laquo;&nbsp;Back"
-msgstr "&laquo;&nbsp;Atrás"
 
 msgid "(Quota exceeded)"
 msgstr "(Cuota superada)"
@@ -1398,6 +1397,7 @@ msgctxt "current status of stack"
 msgid "Check In Progress"
 msgstr "Verificar en Progreso"
 
+#, fuzzy
 msgid "Check Stack"
 msgid_plural "Check Stacks"
 msgstr[0] "Revisar Pila"
@@ -2923,10 +2923,6 @@ msgstr "Descargar fichero OpenStack RC v2.0"
 msgid "Download OpenStack RC File v3"
 msgstr "Descargar fichero RC de OpenStack v3"
 
-#, python-format
-msgid "Download key pair &quot;%(keypair_name)s&quot;"
-msgstr "Descargar par de claves &quot;%(keypair_name)s&quot;"
-
 msgid "EC2 Access Key"
 msgstr "Clave de acceso EC2"
 
@@ -3824,10 +3820,6 @@ msgstr "IPs flotantes:"
 msgid "Folder created successfully."
 msgstr "Carpeta creada correctamente."
 
-#, python-format
-msgid "For GRE networks, valid tunnel IDs are %(min)s through %(max)s."
-msgstr "Para las redes GRE los ID de tunel válidos son %(min)s hasta %(max)s."
-
 msgid ""
 "For TCP and UDP rules you may choose to open either a single port or a range "
 "of ports. Selecting the \"Port Range\" option will provide you with space to "
@@ -3839,28 +3831,6 @@ msgstr ""
 "especificar tanto el puerto de comienzo como de final del rango. Para las "
 "reglas de ICMP por el contrario debe especificar el tipo y código ICMP en "
 "los espacios proporcionados."
-
-#, python-format
-msgid ""
-"For VLAN networks, the VLAN VID on the physical network that realizes the "
-"virtual network. Valid VLAN VIDs are %(vlan_min)s through %(vlan_max)s. For "
-"GRE or VXLAN networks, the tunnel ID. Valid tunnel IDs for GRE networks are "
-"%(gre_min)s through %(gre_max)s. For VXLAN networks, %(vxlan_min)s through "
-"%(vxlan_max)s."
-msgstr ""
-"Para redes VLAN, el VLAN VID realiza la red virtual en la red física. Son "
-"VLAN VID válidas %(vlan_min)s  hasta %(vlan_max)s. Para redes GRE o VXLAN, "
-"el ID de túnel. Son ID de túnel validos para redes GRE %(gre_min)s hasta "
-"%(gre_max)s. Para redes VXLAN, %(vxlan_min)s hasta %(vxlan_max)s. "
-
-#, python-format
-msgid "For VLAN networks, valid VLAN IDs are %(min)s through %(max)s."
-msgstr "Para las redes VLAN, los ID válidos son %(min)s hasta %(max)s."
-
-#, python-format
-msgid "For VXLAN networks, valid tunnel IDs are %(min)s through %(max)s."
-msgstr ""
-"Para las redes VXLAN los ID de tunel válidos son %(min)s hasta %(max)s."
 
 msgid "Forbidden"
 msgstr "Prohibido"
@@ -4444,9 +4414,6 @@ msgstr "Consola de la instancia"
 msgid "Instance Console Log"
 msgstr "Consola de log de instancia"
 
-msgid "Instance Count"
-msgstr "Recuento de instancias"
-
 msgid "Instance ID"
 msgstr "ID de la instancia"
 
@@ -4917,6 +4884,7 @@ msgstr "Metrica:"
 msgid "Migrate"
 msgstr "Migrar"
 
+#, fuzzy
 msgid "Migrate Host"
 msgid_plural "Migrate Hosts"
 msgstr[0] "Migrar Servidor"
@@ -5247,9 +5215,6 @@ msgstr ""
 msgid "Next Hops"
 msgstr "Siguientes saltos"
 
-msgid "Next&nbsp;&raquo;"
-msgstr "Siguiente&nbsp;&raquo;"
-
 msgid "No"
 msgstr "No"
 
@@ -5473,9 +5438,6 @@ msgstr "Número de bytes entrantes en la red para una interfaz de la MV"
 
 msgid "Number of incoming packets for a VM interface"
 msgstr "Número de paquetes entrantes para una interfaz de la MV"
-
-msgid "Number of instances to launch."
-msgstr "Número de instancias a lanzar."
 
 msgid "Number of log lines to be shown per instance"
 msgstr "Número de líneas de inicio de sesión para mostrar por instancia"
@@ -6181,9 +6143,6 @@ msgid_plural "Released Floating IPs"
 msgstr[0] "IP Flotante Liberado"
 msgstr[1] "IPs Flotantes Liberados"
 
-msgid "Reload"
-msgstr "Recargar"
-
 msgid "Remote"
 msgstr "Remoto"
 
@@ -6369,6 +6328,7 @@ msgid_plural "Resume Instances"
 msgstr[0] "Reanudar  Instancia"
 msgstr[1] "Reanudar Instancias"
 
+#, fuzzy
 msgid "Resume Stack"
 msgid_plural "Resume Stacks"
 msgstr[0] "Reanudar Pila"
@@ -6772,9 +6732,6 @@ msgstr "Seleccione un par de claves"
 #, python-format
 msgid "Select a monitor template for %s"
 msgstr "Seleccionar una plantilla de monitor para %s"
-
-msgid "Select a name for your network."
-msgstr "Seleccione un nombre para su red."
 
 msgid "Select a new QoS spec"
 msgstr "Seleccionar una nueva especificación QoS"
@@ -7507,6 +7464,7 @@ msgid_plural "Suspend Instances"
 msgstr[0] "Suspender Instancia"
 msgstr[1] "Suspender Instancias"
 
+#, fuzzy
 msgid "Suspend Stack"
 msgid_plural "Suspend Stacks"
 msgstr[0] "Suspender Pila"
@@ -7665,14 +7623,6 @@ msgstr ""
 msgid "The Aggregate was updated."
 msgstr "El agregado se ha actualizado."
 
-msgid ""
-"The Authorization Key will not be available after closing this page, so you "
-"must capture it now, or else you will be unable to use the transfer."
-msgstr ""
-"La Clave de Autorización no estará disponible luego de cerrar esta página, "
-"así que debe capturarla ahora o de otro modo no podrá realizar la "
-"transferencia."
-
 msgid "The ICMP code is invalid."
 msgstr "El código ICMP no es válido."
 
@@ -7782,14 +7732,6 @@ msgstr "La contraseña cifrada con su clave pública."
 
 msgid "The instance(s) will be shut off."
 msgstr "La instancia(s) seran apagadas."
-
-#, python-format
-msgid ""
-"The key pair &quot;%(keypair_name)s&quot; should download automatically. If "
-"not use the link below."
-msgstr ""
-"El par de claves &quot;%(keypair_name)s&quot; debe descargarse "
-"automáticamente. En caso contrario, utilice el siguiente enlace."
 
 msgid ""
 "The maximum time in seconds for a monitor to wait for a reply. It must be "
@@ -10081,9 +10023,6 @@ msgstr ""
 "Puede especificar una plantilla de reglas deseada o usar reglas TCP, UDP e "
 "ICMP personalizadas."
 
-msgid "You cannot disable the user you are currently logged in as."
-msgstr "No puede deshabilitar el usuario que está utilizando actualmente."
-
 msgid "You cannot disable your current project"
 msgstr "No puede deshabilitar su proyecto actual"
 
@@ -10257,9 +10196,6 @@ msgstr "ambas"
 
 msgid "clear"
 msgstr "limpiar"
-
-msgid "console is currently unavailable. Please try again later."
-msgstr "Consola actualmente no disponible. Inténtelo de nuevo más tarde."
 
 msgid "disabled"
 msgstr "deshabilitado"

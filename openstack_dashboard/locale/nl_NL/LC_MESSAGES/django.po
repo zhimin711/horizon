@@ -2,9 +2,9 @@
 # Joris S'heeren <joris.sheeren@gmail.com>, 2016. #zanata
 msgid ""
 msgstr ""
-"Project-Id-Version: PROJECT VERSION\n"
-"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-04-07 12:25+0000\n"
+"Project-Id-Version: horizon 9.0.1.dev276\n"
+"Report-Msgid-Bugs-To: https://bugs.launchpad.net/openstack-i18n/\n"
+"POT-Creation-Date: 2016-05-15 05:33+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1396,10 +1396,6 @@ msgstr "EC2 identiteitsgegevens ophalen"
 msgid "Download Key Pair"
 msgstr "Sleutelpaar ophalen"
 
-#, python-format
-msgid "Download key pair &quot;%(keypair_name)s&quot;"
-msgstr "Sleutelpaar &quot;%(keypair_name)s&quot; ophalen"
-
 msgid "Edit"
 msgstr "Bewerken"
 
@@ -2304,9 +2300,6 @@ msgstr "Exemplaar beheervenster"
 msgid "Instance Console Log"
 msgstr "Exemplaar beheervenster log"
 
-msgid "Instance Count"
-msgstr "Exemplaartelling"
-
 msgid "Instance ID"
 msgstr "Exemplaar ID"
 
@@ -2978,9 +2971,6 @@ msgstr "Aantal inkomende bytes op het netwerk van een VM aansluiting"
 msgid "Number of incoming packets for a VM interface"
 msgstr "Aantal inkomende pakketten voor een VM aansluiting"
 
-msgid "Number of instances to launch."
-msgstr "Aantal te starten exemplaren."
-
 msgid "Number of objects"
 msgstr "Aantal objecten"
 
@@ -3405,9 +3395,6 @@ msgstr ""
 "Relatieve deel van de verzoeken die dit poulelid bedient ten opzichte van de "
 "anderen"
 
-msgid "Reload"
-msgstr "Herladen"
-
 msgid "Remote"
 msgstr "Van op afstand"
 
@@ -3693,9 +3680,6 @@ msgstr "Selecteer een sleutelpaar"
 #, python-format
 msgid "Select a monitor template for %s"
 msgstr "Selecteer een bewakingsjabloon voor %s"
-
-msgid "Select a name for your network."
-msgstr "Selecteer een naam voor uw netwerk."
 
 msgid "Select a new agent"
 msgstr "Selecteer een nieuw agent"
@@ -4161,15 +4145,6 @@ msgstr ""
 
 msgid "The instance password encrypted with your public key."
 msgstr "Het exemplaar wachtwoord versleuteld met uw publieke sleutel."
-
-#, python-format
-msgid ""
-"The key pair &quot;%(keypair_name)s&quot; should download automatically. If "
-"not use the link below."
-msgstr ""
-"Het sleutelpaar &quot;%(keypair_name)s&quot; zou automatisch moeten worden "
-"opgehaald. Indien dat niet geval is, gebruik dan de onderstaande "
-"snelkoppeling."
 
 msgid ""
 "The minimum disk size required to boot the image. If unspecified, this value "
@@ -5487,11 +5462,6 @@ msgstr ""
 "U kunt het gewenste regelsjabloon specificeren of maatwerk regels gebruiken. "
 "De opties zijn Maatwerk TCP regel, Maatwerk UDP regel of Maatwerk ICMP regel."
 
-msgid "You cannot disable the user you are currently logged in as."
-msgstr ""
-"U kunt de gebruiker waarmee u op dit moment bent aangemeld niet onklaar "
-"maken."
-
 msgid ""
 "You cannot revoke your administrative privileges from the project you are "
 "currently logged into. Please switch to another project with administrative "
@@ -5620,11 +5590,6 @@ msgstr "beiden"
 
 msgid "clear"
 msgstr "wissen"
-
-msgid "console is currently unavailable. Please try again later."
-msgstr ""
-"Het beheervenster is momenteel niet beschikbaar. Probeert u het later nog "
-"eens."
 
 msgid "disabled"
 msgstr "gedeactiveerd"

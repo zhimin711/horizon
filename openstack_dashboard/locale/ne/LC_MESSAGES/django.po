@@ -1,9 +1,9 @@
 # OpenStack Infra <zanata@openstack.org>, 2015. #zanata
 msgid ""
 msgstr ""
-"Project-Id-Version: PROJECT VERSION\n"
-"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-04-07 12:25+0000\n"
+"Project-Id-Version: horizon 9.0.1.dev276\n"
+"Report-Msgid-Bugs-To: https://bugs.launchpad.net/openstack-i18n/\n"
+"POT-Creation-Date: 2016-05-15 05:33+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1702,10 +1702,6 @@ msgstr "EC2  प्रमाण पत्र डाउनलोड गर्न�
 msgid "Download Key Pair"
 msgstr "चाबी जोडा डाउनलोड गर्नुहोस्"
 
-#, python-format
-msgid "Download key pair &quot;%(keypair_name)s&quot;"
-msgstr "चाबी जोडा &quot;%(keypair_name)s&quot; डाउनलोड गर्नुहोस्"
-
 msgid "EC2 Access Key"
 msgstr "EC2 प्रवेश चाबी"
 
@@ -2355,10 +2351,6 @@ msgstr "फ्लोटिङ IPs"
 msgid "Folder created successfully."
 msgstr "फोल्डर सफलतापूर्वक बनाइयो।"
 
-#, python-format
-msgid "For GRE networks, valid tunnel IDs are %(min)s through %(max)s."
-msgstr "GRE नेटवर्कका लागि, वैध टन्नेल IDहरू हुन्  %(min)s द्वारा %(max)s"
-
 msgid ""
 "For TCP and UDP rules you may choose to open either a single port or a range "
 "of ports. Selecting the \"Port Range\" option will provide you with space to "
@@ -2369,27 +2361,6 @@ msgstr ""
 "\" पोर्ट रेन्ज\" विकल्प चयन गर्नाले तपाईँलाई रेन्जका लागि सुरू अनि समाप्ति पोर्टका लागि "
 "स्थान प्रदान गर्नेछ। ICMP नियमका लागि तपाईँले बदलामा ICMP प्रकार अनि कोड प्रदान "
 "गरिएको स्थानमा निश्चित गर्नुपर्छ ।"
-
-#, python-format
-msgid ""
-"For VLAN networks, the VLAN VID on the physical network that realizes the "
-"virtual network. Valid VLAN VIDs are %(vlan_min)s through %(vlan_max)s. For "
-"GRE or VXLAN networks, the tunnel ID. Valid tunnel IDs for GRE networks are "
-"%(gre_min)s through %(gre_max)s. For VXLAN networks, %(vxlan_min)s through "
-"%(vxlan_max)s."
-msgstr ""
-"VLAN नेटवर्कका लागि, भौतिक नेटवर्कमा VLAN VID जसले भर्चुअल नेटवर्क रियलाइज गर्छ। वैध "
-"VLAN VID हरू हुन् %(vlan_min)s द्वारा %(vlan_max)s।GRE वा  VXLAN नेटवर्कका लागि, "
-"टन्नेल ID. GRE नेटवर्का लागि वैध टन्नेल IDहरू हुन् %(gre_min)s द्वारा %(gre_max)s। "
-"VXLAN networksका लागि , %(vxlan_min)s द्वारा %(vxlan_max)s."
-
-#, python-format
-msgid "For VLAN networks, valid VLAN IDs are %(min)s through %(max)s."
-msgstr "VLAN नेटवर्कका लागि, वैध VLAN ID हुन्  %(min)s द्वारा %(max)s"
-
-#, python-format
-msgid "For VXLAN networks, valid tunnel IDs are %(min)s through %(max)s."
-msgstr "VXLAN नेटवर्कका लागि, वैध टन्नेल ID हरू हुन्  %(min)s द्वारा %(max)s"
 
 msgid "Forbidden"
 msgstr "निषेध गरिएको"
@@ -2829,9 +2800,6 @@ msgstr "इन्सटेन्स कन्सोल"
 
 msgid "Instance Console Log"
 msgstr "इन्सटेन्स कन्सोल लग"
-
-msgid "Instance Count"
-msgstr "इन्सटेन्स गणना"
 
 msgid "Instance ID"
 msgstr "इन्सटेन्सID"
@@ -3594,9 +3562,6 @@ msgstr "VM इन्टरफेसका लागि इनकमिङ बा
 msgid "Number of incoming packets for a VM interface"
 msgstr "VM इन्टरफेसका लागि इनकमिङ प्याकेटहरूको सङ्ख्या"
 
-msgid "Number of instances to launch."
-msgstr "आरम्भ गर्नुपर्ने इन्सटेन्सहरूको सङ्ख्या"
-
 msgid "Number of objects"
 msgstr "वस्तुहरूको सङ्ख्याी"
 
@@ -4045,9 +4010,6 @@ msgstr ""
 "सबै चयन गरिएका सदस्यहरूमा एकै किसिमको ओजन प्रयोग गरिन्छ अनि पछि बदलाउन सकिन्छ। ओजन "
 "आवश्यक रूपमा 1 देखि 256 सम्मको स्तरमा हुनुपर्छ।"
 
-msgid "Reload"
-msgstr "रिलोड गर्नुहोस्े"
-
 msgid "Remote"
 msgstr "रिमोट"
 
@@ -4364,9 +4326,6 @@ msgstr "एउटा चाबी जोडा चयन गर्नुहो�
 #, python-format
 msgid "Select a monitor template for %s"
 msgstr " %s का लागि एउटा मनिटर चयन गर्नुहोस्"
-
-msgid "Select a name for your network."
-msgstr "तपाईँको नेटवर्कको लागि एउटा नाम चयन गर्नुहोस्"
 
 msgid "Select a new agent"
 msgstr "एउटा नयाँ एजेन्ट चयन गर्नुहोस्"
@@ -4980,14 +4939,6 @@ msgstr "इन्सटेन्सले होस्ट\"%s\" मा लाइ
 
 msgid "The instance password encrypted with your public key."
 msgstr "तपाईँको पब्लिक चाबीद्वारा इन्क्रिप्ट गरिएको इन्सटेन्स पासवर्ड"
-
-#, python-format
-msgid ""
-"The key pair &quot;%(keypair_name)s&quot; should download automatically. If "
-"not use the link below."
-msgstr ""
-"चाबी जोडा&quot;%(keypair_name)s&quot स्वतः डाउनलोड हुनुपर्छ। यदि भएन भने तल "
-"दिइएको लिङ्क प्रयोग  गर्नुहोस्"
 
 msgid ""
 "The minimum disk size required to boot the image. If unspecified, this value "
@@ -6616,9 +6567,6 @@ msgstr ""
 "तपाईँले आवस्यक नियम टेम्प्लेट तोक्न सक्नुहुन्छ वा कस्टम प्रयोग गर्नुहोस्, विकल्पहरू हुन् टिसिपि "
 "नियम, कस्टम युडिपि नियम, वा कस्टम आइसिएमपि निय "
 
-msgid "You cannot disable the user you are currently logged in as."
-msgstr "तपाईँले वर्तमान लगइन गर्नुभएको उपभोक्ता निस्क्रीय गर्न सक्नुहुन्न।"
-
 msgid ""
 "You cannot revoke your administrative privileges from the domain you are "
 "currently logged into. Please switch to another domain with administrative "
@@ -6764,9 +6712,6 @@ msgstr "दुवै"
 
 msgid "clear"
 msgstr "सफा गर्नुहोस्"
-
-msgid "console is currently unavailable. Please try again later."
-msgstr "कन्सोल वर्तमा उपलब्ध छैन। कृपया फेरि कोशिस गर्नुहोस्"
 
 msgid "disabled"
 msgstr "निस्क्रीय गरिएको"

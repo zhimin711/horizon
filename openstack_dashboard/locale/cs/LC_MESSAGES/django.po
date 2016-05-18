@@ -1,15 +1,16 @@
 # OpenStack Infra <zanata@openstack.org>, 2015. #zanata
 # Zbyněk Schwarz <zbynek.schwarz@gmail.com>, 2015. #zanata
+# OpenStack Infra <zanata@openstack.org>, 2016. #zanata
 # Zbyněk Schwarz <zbynek.schwarz@gmail.com>, 2016. #zanata
 msgid ""
 msgstr ""
-"Project-Id-Version: PROJECT VERSION\n"
-"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-04-07 12:25+0000\n"
+"Project-Id-Version: horizon 9.0.1.dev276\n"
+"Report-Msgid-Bugs-To: https://bugs.launchpad.net/openstack-i18n/\n"
+"POT-Creation-Date: 2016-05-15 05:33+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2016-01-08 01:30+0000\n"
+"PO-Revision-Date: 2016-04-09 08:09+0000\n"
 "Last-Translator: Zbyněk Schwarz <zbynek.schwarz@gmail.com>\n"
 "Language-Team: Czech\n"
 "Language: cs\n"
@@ -460,9 +461,6 @@ msgstr "%sGiB"
 #, python-format
 msgid "%sMB"
 msgstr "%s MB"
-
-msgid "&laquo;&nbsp;Back"
-msgstr "&laquo;&nbsp;Zpět"
 
 msgid "(Quota exceeded)"
 msgstr "(Kvóta překročena)"
@@ -1388,6 +1386,7 @@ msgctxt "current status of stack"
 msgid "Check In Progress"
 msgstr "Probíhá kontrola"
 
+#, fuzzy
 msgid "Check Stack"
 msgid_plural "Check Stacks"
 msgstr[0] "Zkontrolovat zásobník"
@@ -3089,10 +3088,6 @@ msgstr "Stáhnout RC soubor OpenStack v2.0"
 msgid "Download OpenStack RC File v3"
 msgstr "Stáhnout RC soubor OpenStack v3"
 
-#, python-format
-msgid "Download key pair &quot;%(keypair_name)s&quot;"
-msgstr "Stáhnout pár klíče &quot;%(keypair_name)s&quot;"
-
 msgid "EC2 Access Key"
 msgstr "Přístupový klíč EC2"
 
@@ -3976,10 +3971,6 @@ msgstr "Plovoucí IP adresy:"
 msgid "Folder created successfully."
 msgstr "Složka byla úspěšně vytvořena."
 
-#, python-format
-msgid "For GRE networks, valid tunnel IDs are %(min)s through %(max)s."
-msgstr "Platné ID tunelu pro sítě GRE jsou %(min)s až %(max)s."
-
 msgid ""
 "For TCP and UDP rules you may choose to open either a single port or a range "
 "of ports. Selecting the \"Port Range\" option will provide you with space to "
@@ -3990,27 +3981,6 @@ msgstr ""
 "Výběrem \"Rozsah portů\" Vám bude poskytnut prostor pro zadání počátečního a "
 "koncového portu rozsahu. U pravidla ICMP zadáváte do přidělených polí typ "
 "ICMP a kód."
-
-#, python-format
-msgid ""
-"For VLAN networks, the VLAN VID on the physical network that realizes the "
-"virtual network. Valid VLAN VIDs are %(vlan_min)s through %(vlan_max)s. For "
-"GRE or VXLAN networks, the tunnel ID. Valid tunnel IDs for GRE networks are "
-"%(gre_min)s through %(gre_max)s. For VXLAN networks, %(vxlan_min)s through "
-"%(vxlan_max)s."
-msgstr ""
-"Pro sítě VLAN je virtuální síť na fyzické síti určena pomocí VLAN VID. "
-"Platné VLAN VID jsou %(vlan_min)s až po %(vlan_max)s. Pro sítě GRE či VXLAN "
-"je to ID tunelu. Platné ID tunelu pro sítě GRE jsou %(gre_min)s až "
-"%(gre_max)s. Pro sítě VXLAN %(vxlan_min)s až %(vxlan_max)s."
-
-#, python-format
-msgid "For VLAN networks, valid VLAN IDs are %(min)s through %(max)s."
-msgstr "Platné VLAN ID pro sítě VLAN jsou %(min)s až %(max)s."
-
-#, python-format
-msgid "For VXLAN networks, valid tunnel IDs are %(min)s through %(max)s."
-msgstr "Platné ID tunelu pro sítě VXLAN jsou %(min)s až %(max)s."
 
 msgid "Forbidden"
 msgstr "Zakázáno"
@@ -4590,9 +4560,6 @@ msgstr "Konzole instance"
 msgid "Instance Console Log"
 msgstr "Protokol konzole instance"
 
-msgid "Instance Count"
-msgstr "Počet instancí"
-
 msgid "Instance ID"
 msgstr "ID instance"
 
@@ -5055,6 +5022,7 @@ msgstr "Metriky:"
 msgid "Migrate"
 msgstr "Přenést"
 
+#, fuzzy
 msgid "Migrate Host"
 msgid_plural "Migrate Hosts"
 msgstr[0] "Přesunout hostitele"
@@ -5383,9 +5351,6 @@ msgstr ""
 msgid "Next Hops"
 msgstr "Další skoky"
 
-msgid "Next&nbsp;&raquo;"
-msgstr "Další&nbsp;&raquo;"
-
 msgid "No"
 msgstr "Ne"
 
@@ -5609,9 +5574,6 @@ msgstr "Počet příchozích bajtů v síti pro rozhraní VM"
 
 msgid "Number of incoming packets for a VM interface"
 msgstr "Počet příchozích paketů pro rozhraní VM"
-
-msgid "Number of instances to launch."
-msgstr "Počet instancí ke spuštění."
 
 msgid "Number of log lines to be shown per instance"
 msgstr "Počet řádků záznamu zobrazených na instanci"
@@ -6316,9 +6278,6 @@ msgstr[0] "Plovoucí IP adresa uvolněna"
 msgstr[1] "Plovoucí IP adresy uvolněny"
 msgstr[2] "Plovoucí IP adresy uvolněny"
 
-msgid "Reload"
-msgstr "Obnovit"
-
 msgid "Remote"
 msgstr "Vzdálené"
 
@@ -6507,6 +6466,7 @@ msgstr[0] "Obnovit instanci"
 msgstr[1] "Obnovit instance"
 msgstr[2] "Obnovit instance"
 
+#, fuzzy
 msgid "Resume Stack"
 msgid_plural "Resume Stacks"
 msgstr[0] "Obnovit zásobník"
@@ -6919,9 +6879,6 @@ msgstr "Vyberte pár klíče."
 #, python-format
 msgid "Select a monitor template for %s"
 msgstr "Vyberte šablonu monitoru pro %s"
-
-msgid "Select a name for your network."
-msgstr "Vyberte název pro vaši síť."
 
 msgid "Select a new QoS spec"
 msgstr "Zvolte novou specifikaci QoS"
@@ -7645,6 +7602,7 @@ msgstr[0] "Uspat instanci"
 msgstr[1] "Uspat instance"
 msgstr[2] "Uspat instance"
 
+#, fuzzy
 msgid "Suspend Stack"
 msgid_plural "Suspend Stacks"
 msgstr[0] "Uspat zásobník"
@@ -7804,13 +7762,6 @@ msgstr ""
 msgid "The Aggregate was updated."
 msgstr "Agregát byl aktualizován."
 
-msgid ""
-"The Authorization Key will not be available after closing this page, so you "
-"must capture it now, or else you will be unable to use the transfer."
-msgstr ""
-"Po zavření této stránky nebudete moci klíč pro schválení znovu zobrazit, "
-"proto si ho zapište nyní, jinak nebudete moci přenos dokončit."
-
 msgid "The ICMP code is invalid."
 msgstr "Kód ICMP je neplatný."
 
@@ -7917,14 +7868,6 @@ msgstr "Heslo instance zašifrované pomocí vašeho veřejného klíče."
 
 msgid "The instance(s) will be shut off."
 msgstr "Instance budou vypnuty."
-
-#, python-format
-msgid ""
-"The key pair &quot;%(keypair_name)s&quot; should download automatically. If "
-"not use the link below."
-msgstr ""
-"Pár klíče &quot;%(keypair_name)s&quot; by měl být stažen automaticky. Pokud "
-"ne, použijte odkaz níže."
 
 msgid ""
 "The maximum time in seconds for a monitor to wait for a reply. It must be "
@@ -10148,9 +10091,6 @@ msgstr ""
 "možnosti jsou vlastní pravidlo TCP, vlastní pravidlo UDP a vlastní pravidlo "
 "ICMP."
 
-msgid "You cannot disable the user you are currently logged in as."
-msgstr "Nemůžete zakázat uživatele pod kterým jste zrovna přihlášeni."
-
 msgid "You cannot disable your current project"
 msgstr "Váš současný projekt nemůžete zakázat"
 
@@ -10317,9 +10257,6 @@ msgstr "obě"
 
 msgid "clear"
 msgstr "vyčistit"
-
-msgid "console is currently unavailable. Please try again later."
-msgstr "konzole je nyní nedostupná. Prosím zkuste to později."
 
 msgid "disabled"
 msgstr "zakázáno"
